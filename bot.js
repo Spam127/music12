@@ -345,6 +345,15 @@ client.on('message', message => {
     }
 });
 
-
+client.on('ready', () => {
+   console.log(`----------------`);
+      console.log(`skran`);
+        console.log(`---------------`);
+      console.log(`ON ${client.guilds.size} Servers `);
+    console.log(`---------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame(`| HardServer`,"http://twitch.tv/y04zgamer")
+   client.user.setStatus("dnd")
+});
 
 client.login("NTM0MDcwMjY4ODEzOTAxODQ1.Dx0PVQ.XFOOs-DK_HBAHFx7cHQfhoovFd4");
